@@ -1,11 +1,11 @@
 package mod.sin.lib;
 
+import java.util.Properties;
+import java.util.logging.Logger;
+
 import org.gotti.wurmunlimited.modloader.interfaces.Configurable;
 import org.gotti.wurmunlimited.modloader.interfaces.PreInitable;
 import org.gotti.wurmunlimited.modloader.interfaces.WurmServerMod;
-
-import java.util.Properties;
-import java.util.logging.Logger;
 
 public class SinduskLibrary
 implements WurmServerMod,

@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 group "mod.sin"
 version "2.5"
@@ -27,4 +28,12 @@ task dist(type: Zip) {
     })
 
     archiveName "${project.name}-${project.version}.zip"
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
